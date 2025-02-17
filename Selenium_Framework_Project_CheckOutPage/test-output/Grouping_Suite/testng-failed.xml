@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Grouping_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Group_of_3_Test(failed)">
+    <groups>
+      <run>
+        <include name="Retesting"/>
+        <include name="Sanity"/>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.CheckOutPage_1_Test">
+        <methods>
+          <include name="inputInformationTest"/>
+          <include name="verifyURLCheckOutPage1Test"/>
+        </methods>
+      </class> <!-- TestCases.CheckOutPage_1_Test -->
+      <class name="TestCases.CheckOut_Complete_Page_Test">
+        <methods>
+          <include name="verifyBackHomeBtnTest"/>
+          <include name="verifyTitleTest"/>
+        </methods>
+      </class> <!-- TestCases.CheckOut_Complete_Page_Test -->
+      <class name="TestCases.CheckOutPage_2_Test">
+        <methods>
+          <include name="verifyFinalPriceTest"/>
+          <include name="verifyPriceTotalTest"/>
+          <include name="clickOnFinishBtnTest"/>
+          <include name="verifyPaymentInformationTest"/>
+          <include name="verifyDescriptionoifItemsTest"/>
+        </methods>
+      </class> <!-- TestCases.CheckOutPage_2_Test -->
+    </classes>
+  </test> <!-- Group_of_3_Test(failed) -->
+</suite> <!-- Failed suite [Grouping_Suite] -->

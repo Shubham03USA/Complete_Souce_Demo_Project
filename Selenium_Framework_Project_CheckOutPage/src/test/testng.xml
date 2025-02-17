@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Grouping_Suite">
+  <test thread-count="5" name="Group_of_3_Test">
+  <groups>
+  <run>
+  <include name="Retesting"></include>
+  <include name="Sanity"></include>
+  <exclude name="Regression"></exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="TestCases.CheckOutPage_1_Test"/>
+      <class name="TestCases.CheckOut_Complete_Page_Test"/>
+      <class name="TestCases.CheckOutPage_2_Test"/>
+    </classes>
+  </test> <!-- Group_of_3_Test -->
+</suite> <!-- Grouping_Suite -->
