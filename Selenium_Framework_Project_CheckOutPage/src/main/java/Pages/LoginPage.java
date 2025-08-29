@@ -17,9 +17,7 @@ public class LoginPage extends TestBase
 	@FindBy(xpath = "//input[@name='user-name']") private WebElement userTxtBox;
 	@FindBy(xpath = "//input[@name='password']") private WebElement passwordTxtBox;
 	@FindBy(xpath = "//input[@name='login-button']") private WebElement loginbtn;
-	
-	
-	
+		
 	public LoginPage()
 	{
 		super();
